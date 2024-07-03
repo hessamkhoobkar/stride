@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: "2024-07-02",
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/tailwind.css"],
   modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxtjs/supabase"],
   runtimeConfig: {
     public: {
