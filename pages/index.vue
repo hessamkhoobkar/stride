@@ -1,3 +1,19 @@
+<script lang="ts" setup>
+const user = useSupabaseUser();
+const { auth } = useSupabaseClient();
+
+const signOut = async () => {
+  let { error } = await auth.signOut();
+  if (error) console.log(error);
+};
+
+watchEffect(() => {
+  if (!user.value) {
+    navigateTo("/login");
+  }
+});
+</script>
+
 <template>
   <div>
     <h1 class="text-3xl font-bold underline">Hello world!</h1>
@@ -6,13 +22,9 @@
       dicta sunt modi cumque, voluptate, numquam saepe officia unde ex aliquid
       quas porro veniam nihil fugiat architecto laborum. Atque, repellendus?
     </p>
-    <Button>Click me</Button>
+    <Button @click="signOut">Sign Out</Button>
   </div>
 </template>
-
-<script lang="ts" setup>
-//
-</script>
 
 <style scoped>
 /*  */
