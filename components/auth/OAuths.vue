@@ -1,24 +1,3 @@
-<script lang="ts" setup>
-import GoogleIcon from "~/assets/icons/GoogleIcon.vue";
-import GithubIcon from "~/assets/icons/GithubIcon.vue";
-import GitlabIcon from "~/assets/icons/GitlabIcon.vue";
-
-const oAuths = [
-  {
-    name: "Google",
-    icon: GoogleIcon,
-  },
-  {
-    name: "Github",
-    icon: GithubIcon,
-  },
-  {
-    name: "Gitlab",
-    icon: GitlabIcon,
-  },
-];
-</script>
-
 <template>
   <section class="w-full">
     <!-- Section title -->
@@ -41,3 +20,24 @@ const oAuths = [
     </div>
   </section>
 </template>
+
+<script lang="ts" setup>
+import GoogleIcon from "~/assets/icons/GoogleIcon.vue";
+import GithubIcon from "~/assets/icons/GithubIcon.vue";
+import GitlabIcon from "~/assets/icons/GitlabIcon.vue";
+
+const oAuths = [
+  {
+    name: "Google",
+    icon: GoogleIcon,
+  },
+  {
+    name: "Github",
+    icon: GithubIcon,
+  },
+  {
+    name: "Gitlab",
+    icon: GitlabIcon,
+  },
+];
+</script>

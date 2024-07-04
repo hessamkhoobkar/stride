@@ -4,41 +4,26 @@
     You can also sign in with one of these demo accounts:
   </p>
 
-  <!-- 
-    As this design is for listing the demo accounts, 
-    there is no need to abstract the card to a separate component, 
-    as it should not be used in any other place other than here
-  -->
+  <!-- Account Card component is abstracted to a adjacent file as it should not be used in any other place other than here -->
   <div class="flex w-full flex-col items-center justify-center gap-2">
-    <Card class="w-full" v-for="account in demoAccounts" :key="account.id">
-      <CardContent class="flex flex-row items-center justify-start gap-4 p-3">
-        <Avatar size="base" shape="square">
-          <AvatarImage :src="account.avatar" :alt="account.name" />
-          <AvatarFallback>{{ account.initials }}</AvatarFallback>
-        </Avatar>
-        <div class="flex flex-col items-start">
-          <span> {{ account.name }} </span>
-          <span class="text-sm text-muted-foreground">
-            {{ account.email }}
-          </span>
-        </div>
-
-        <Button
-          class="ms-auto"
-          @click="$emit('handleSignin', account.email, account.password)"
-        >
-          Sign in
-        </Button>
-      </CardContent>
-    </Card>
+    <AccountCard
+      v-for="account in demoAccounts"
+      :key="account.id"
+      :account="account"
+      @handle-button-click="
+        $emit('handleSignin', account.email, account.password)
+      "
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
+import AccountCard from "./AccountCard.vue";
+
 // DO NOT USE THIS IN PRODUCTION
 //
-// This is obscene for production,
-// this is against any security best practices,
+// This is obscene in any shape and form for production,
+// this is even against most fundamentals of security,
 // but it's just for the demo to give vistors a sense of what it's like to use Stride.
 //
 // DO NOT USE THIS IN PRODUCTION
