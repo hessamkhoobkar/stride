@@ -24,6 +24,9 @@ watchEffect(() => {
     </p>
     <Button @click="signOut">Sign Out</Button>
   </div>
+  <!-- <pre>
+    {{ user }}
+  </pre> -->
 </template>
 
 <style scoped>

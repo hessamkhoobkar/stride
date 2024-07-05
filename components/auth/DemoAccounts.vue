@@ -34,7 +34,7 @@ const demoAccounts = [
     initials: "RM",
     email: "royjmaes@teleworm.us",
     password: "phaifie4UC",
-    avatar: "/users/avatar-01.jpg",
+    avatar: "/users/avatar-03.jpg",
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ const demoAccounts = [
     initials: "MC",
     email: "marciclark@jourrapide.com",
     password: "coo4Ahyaed",
-    avatar: "/users/avatar-03.jpg",
+    avatar: "/users/avatar-01.jpg",
   },
 ];
 </script>
