@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: "2024-07-02",
   css: ["~/assets/css/tailwind.css"],
-  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxtjs/supabase"],
+  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxtjs/supabase", "@pinia/nuxt"],
   runtimeConfig: {
     public: {
       baseUrl: process.env.BASE_URL || "http://localhost:3000",
