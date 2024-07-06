@@ -1,75 +1,107 @@
-# Nuxt 3 Minimal Starter
+# Stride
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to **Stride**, a cutting-edge task management application designed to revolutionize team collaboration and organization. Stride seamlessly blends functionality with an intuitive interface, empowering teams to manage tasks efficiently and ensuring everyone stays on the same page in real-time.
 
-## Setup
+## Features
 
-Make sure to install the dependencies:
+- **Real-time Collaboration**: Stay updated with real-time changes using Websockets.
+- **Task Management**: Create, assign, and track tasks easily.
+- **Intuitive Interface**: User-friendly design for a smooth experience.
+- **Form Validation**: Ensure data integrity with Yep form validation.
+- **Responsive Design**: Tailwind CSS, Radix, and shadcn for a sleek and adaptive interface.
 
-```bash
-# npm
-npm install
+## Technologies Used
 
-# pnpm
-pnpm install
+- **Frontend**: [Nuxt.js](https://nuxtjs.org/) - A progressive framework based on Vue.js.
+- **Backend**: [Supabase](https://supabase.io/) - A powerful open-source Firebase alternative.
+- **Styling**: 
+  - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
+  - [Radix](https://www.radix-ui.com/) - Primitives for building high-quality, accessible design systems and web apps.
+  - [shadcn](https://shadcn.dev/) - A component library for Tailwind CSS.
+- **Real-time Communication**: Websockets - To enable real-time updates and synchronization.
+- **Form Validation**: [Yep](https://yep.dev/) - A lightweight validation library.
 
-# yarn
-yarn install
+## Getting Started
 
-# bun
-bun install
-```
+### Prerequisites
 
-## Development Server
+Before you begin, ensure you have met the following requirements:
 
-Start the development server on `http://localhost:3000`:
+- Node.js and npm installed
+- Supabase account and project set up
 
-```bash
-# npm
-npm run dev
+### Installation
 
-# pnpm
-pnpm run dev
+1. Clone the repository:
 
-# yarn
-yarn dev
+    ```sh
+    git clone https://github.com/hessamkhoobkar/stride
+    ```
 
-# bun
-bun run dev
-```
+2. Navigate to the project directory:
 
-## Production
+    ```sh
+    cd stride
+    ```
 
-Build the application for production:
+3. Install dependencies:
 
-```bash
-# npm
-npm run build
+    ```sh
+    pnpm install
+    ```
 
-# pnpm
-pnpm run build
+4. Set up environment variables:
 
-# yarn
-yarn build
+    Create a `.env` file in the root directory and add your Supabase credentials:
 
-# bun
-bun run build
-```
+    ```sh
+    SUPABASE_URL=your-supabase-url
+    SUPABASE_KEY=your-supabase-key
+    ```
 
-Locally preview production build:
+### Running the Application
 
-```bash
-# npm
-npm run preview
+1. Start the development server:
 
-# pnpm
-pnpm run preview
+    ```sh
+    pnpm dev
+    ```
 
-# yarn
-yarn preview
+2. Open your browser and navigate to:
 
-# bun
-bun run preview
-```
+    ```
+    http://localhost:3000
+    ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Building for Production
+
+1. Build the application:
+
+    ```sh
+    pnpm build
+    ```
+
+2. Start the production server:
+
+    ```sh
+    pnpm preview
+    ```
+
+## Contributing
+
+Contributions are welcome! Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Thank you for using Stride! We hope it enhances your team's productivity and collaboration.
