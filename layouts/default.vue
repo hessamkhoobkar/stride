@@ -10,6 +10,11 @@
 <script lang="ts" setup>
 import type { Database } from "~/types/supabase";
 
+useSeoMeta({
+  title: "Stride",
+  description: "Your next level task management tool",
+});
+
 // initialize the supabase client and Get the user object
 const supabase = useSupabaseClient<Database>();
 const user = useSupabaseUser();

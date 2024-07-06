@@ -12,3 +12,10 @@
     </section>
   </div>
 </template>
+
+<script lang="ts" setup>
+useSeoMeta({
+  title: "Stride",
+  description: "Your next level task management tool",
+});
+</script>
