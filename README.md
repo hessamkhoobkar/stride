@@ -1,3 +1,5 @@
+![stride-cover](https://github.com/hessamkhoobkar/stride/assets/41147418/a565d808-c215-45ba-8e28-79152065525b)
+
 # Stride
 
 Welcome to **Stride**, a cutting-edge task management application designed to revolutionize team collaboration and organization. Stride seamlessly blends functionality with an intuitive interface, empowering teams to manage tasks efficiently and ensuring everyone stays on the same page in real-time.
